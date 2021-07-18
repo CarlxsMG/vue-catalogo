@@ -4,7 +4,7 @@
 
         <ul class="header__menu">
             <li class="header__menu__item">
-                <a href="" class="header__menu__item__link">Productos</a>
+                <router-link :to="{ name: 'productos' }" class="header__menu__item__link">Productos</router-link>
             </li>
             <li class="header__menu__item">
                 <a href="" class="header__menu__item__link">Categorias</a>
