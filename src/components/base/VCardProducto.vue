@@ -24,6 +24,7 @@ export default {
         margin: 5px;
         background: $colorWhite;
         min-width: 300px;
+        max-width: 300px;
 
         &__img {
             width: 100%;
