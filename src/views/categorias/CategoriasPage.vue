@@ -1,14 +1,21 @@
 <template>
     <div class='grid-2x2 categoria'>
-        <div class="categoria__filters">Filtros</div>
+        <div class="categoria__filters">
+            <the-lista-categorias />
+        </div>
         <div class="categoria__colors">Colors</div>
         <div class="categoria__content">Contenido</div>
     </div>
 </template>
 
 <script>
+    import TheListaCategorias from '../../components/categorias/TheListarCategorias.vue'
+
     export default {
-      name: 'CategoriasPage'
+      name: 'CategoriasPage',
+      components: {
+        TheListaCategorias
+      }
     }
 </script>
 
