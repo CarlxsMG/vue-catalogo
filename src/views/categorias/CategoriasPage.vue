@@ -3,18 +3,20 @@
         <div class="categoria__filters">
             <the-lista-categorias />
         </div>
-        <div class="categoria__colors">Colors</div>
+        <the-lista-colores class="categoria__colors" />
         <div class="categoria__content">Contenido</div>
     </div>
 </template>
 
 <script>
     import TheListaCategorias from '../../components/categorias/TheListarCategorias.vue'
+    import TheListaColores from '../../components/categorias/TheListaColores.vue'
 
     export default {
       name: 'CategoriasPage',
       components: {
-        TheListaCategorias
+        TheListaCategorias,
+        TheListaColores
       }
     }
 </script>
