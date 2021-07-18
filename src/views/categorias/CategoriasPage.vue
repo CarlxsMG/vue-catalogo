@@ -4,7 +4,9 @@
             <the-lista-categorias />
         </div>
         <the-lista-colores class="categoria__colors" />
-        <div class="categoria__content">Contenido</div>
+        <div class="categoria__content">
+            <router-view />
+        </div>
     </div>
 </template>
 
