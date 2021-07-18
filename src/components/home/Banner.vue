@@ -18,10 +18,14 @@
 
 <style lang="scss" scoped>
     .banner {
-        border: 1px solid;
+        border: 1px solid red;
+        text-align: center;
         &__img {
             width: 100%;
             height: 200px;
+            @include desde($medium) {
+                height: 400px;
+            }
         }
     }
 </style>

@@ -12,3 +12,29 @@ $colorFirst: #0ed5f8;
 $colorSecond: #222222;
 $colorThird: #616161;
 $colorWhite: #e6e6e6;
+
+
+// Variables breakpoints
+$smallScreen: '600px';
+$mediumScreen: '960px';
+$largeScreen: '1264px';
+$extraLargeScreen: '1904px';
+
+// MediaQueries
+@mixin desde ($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin hasta ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin desde_hasta ($minSize, $maxSize) {
+    @media screen and (min-width: $minSize) and (max-width: $maxSize) {
+        @content;
+    }
+}
