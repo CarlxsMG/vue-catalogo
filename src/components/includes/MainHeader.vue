@@ -7,7 +7,7 @@
                 <router-link :to="{ name: 'productos' }" class="header__menu__item__link">Productos</router-link>
             </li>
             <li class="header__menu__item">
-                <router-link :to="{ name: 'categorias' }" class="header__menu__item__link">Categorias</router-link>
+                <router-link :to="{ name: 'categorias', params: {'category': ' '} }" class="header__menu__item__link">Categorias</router-link>
             </li>
         </ul>
     </div>

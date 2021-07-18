@@ -20,7 +20,7 @@ const routes = [
     component: CategoriasPage,
     children: [
       {
-        path: '/productos-categorias',
+        path: '/:category',
         name: 'categorias',
         component: ProductosPorCategoriaPage
       }
