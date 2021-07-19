@@ -1,12 +1,18 @@
 <template>
-    <div>
-        detalle
+    <div style="width: 100%; heigth: 400px;">
+        <producto-detail />
     </div>
 </template>
 
 <script>
+
+import ProductoDetail from '../../components/productos/ProductosDetail.vue'
+
 export default {
-  name: 'ProductosDetailPage'
+  name: 'ProductosDetailPage',
+  components: {
+    ProductoDetail
+  }
 }
 </script>
 
