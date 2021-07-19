@@ -1,7 +1,11 @@
 <template>
     <div class="grid-1x1">        
         <div v-for="producto in productos" :key="producto.id">
-            <v-card-producto :image="producto.main_image" :name="producto.name" :price="parseFloat(producto.price)" />
+            <v-card-producto 
+              :image="producto.main_image" 
+              :name="producto.name" 
+              :price="parseFloat(producto.price)" 
+              :ruta="{ name: 'detalle-producto', params: {id: producto.id } }" />
         </div>
     </div>
 </template>

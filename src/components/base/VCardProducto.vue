@@ -2,7 +2,7 @@
     <div class="producto">
         <img :src="image" class="producto__img">
         <br>
-        <a class="producto__name">{{ name }}</a>
+        <router-link :to="ruta" class="producto__name">{{ name }}</router-link>
         <p class="producto__price">{{ price }}</p>
     </div>
 </template>
@@ -13,7 +13,8 @@ export default {
   props: {
       image: String,
       name: String,
-      price: Number
+      price: Number,
+      ruta: Object
   }
 }   
 </script>
